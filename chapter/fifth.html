@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="first">
+	
+	<div data-role="header" class="ui-corner-all">
+		<h1>팝업 관련 페이지</h1>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+		<div data-role="popup" id="myPopup3" class="ui-content">
+		  <p>기본 팝업창</p>
+		  <p><b>힌트:</b> 다른 부분 클릭으로 이 팝업 닫기가능</p>
+		</div>
+
+		<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+		<div data-role="popup" id="myPopup" class="ui-content">
+		  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		  <p>우측 상단에 닫기버튼 있는 팝업창</p>
+		  <p><b>힌트:</b> 닫기버튼 or 다른 부분 클릭으로 이 팝업 닫기가능</p>
+		</div>
+
+		<a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+		<div data-role="popup" id="myPopup1" class="ui-content">
+		  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+		  <p>좌측 상단에 닫기버튼 있는 팝업창</p>
+		  <p><b>힌트:</b>좌측 상단에 닫기버튼 or 다른 부분 클릭으로 이 팝업 닫기가능</p>
+		</div>
+
+		<a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+		<div data-role="popup" id="myPopup2" class="ui-content" data-dismissible="false">
+		  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+		  <p>닫기버튼 으로만 닫을 수 있는 팝업창</p>
+		  <p><b>힌트:</b> 닫기버튼만 닫기가능</p>
+		</div>
+
+		<a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">tartget window</a>
+
+		<div data-role="popup" id="myPopup4" class="ui-content" data-position-to="window">
+		  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+		  <p>현재창의 가운데 팝업창</p>
+		</div>
+
+		<a href="#myPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">tartget id</a>
+
+		<div data-role="popup" id="myPopup5" class="ui-content" data-position-to="#poppos" data-transition="flip">
+		  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+		  <p>지정한 id에 위치하는 팝업</p>
+		</div>
+
+		<div>
+		  지정한 팝업 위치 ->>>>>>>>>>>>>>>>>>>>>>>>>><span id="poppos">여기</span>
+		</div>
+
+		<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Open Dialog Popup</a>
+
+	   <div data-role="popup" id="myPopupDialog">
+      <div data-role="header">
+        <h1>Header Text</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h2>Welcome to my Popup Dialog!</h2>
+        <p>jQuery Mobile is FUN!</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Go Back</a>
+      </div>
+
+      <div data-role="footer">
+        <h1>Footer Text</h1>
+      </div>
+  </div>
+	</div>
+
+	<div data-role="footer" class="ui-corner-all">
+		<h1>끝</h1>
+	</div>
+
+</div>
+</body>
+</html>
