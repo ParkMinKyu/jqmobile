@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<!-- 1번 페이지 -->
+<div data-role="page" id="first">
+	
+	<div data-role="header">
+		<h1>첫 페이지</h1>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<h1>내용1</h1>
+		<h2>별거없음1</h2>
+		<a href="#second" data-role="button" data-rel="dialog" data-transition="slide">2페이지로</a>
+	</div>
+
+	<div data-role="footer">
+		<h1>끝</h1>
+	</div>
+</div>
+<!-- 2번 페이지 -->
+<div data-role="page" data-dialog="true" id="second">
+	
+	<div data-role="header">
+		<h1>2 페이지</h1>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<h1>내용2</h1>
+		<h2>별거없음2</h2>
+		<a href="#first" data-role="button">1페이지로</a>
+	</div>
+
+	<div data-role="footer">
+		<h1>끝</h1>
+	</div>
+</div>
+
+</body>
+</html>

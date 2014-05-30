@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="first">
+	<div data-role="header">
+		<h1>jquery mobile UI Sample 페이지</h1>
+	</div>
+	
+	<div data-role="main">
+		<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+			<a href="#ch1" class="ui-btn ui-btn-inline">Chapter1</a>
+		    <a href="#ch2" class="ui-btn ui-btn-inline">Chapter2</a>
+			<a href="#ch3" class="ui-btn ui-btn-inline">Chapter3</a>
+		</div>
+
+		<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+  			<a href="#ch4" class="ui-btn ui-btn-inline">Chapter4</a>
+			<a href="#ch5" class="ui-btn ui-btn-inline">Chapter5</a>
+			<a href="#ch6" class="ui-btn ui-btn-inline">Chapter6</a>
+		</div>
+
+		<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+			<a href="#ch7" class="ui-btn ui-btn-inline">Chapter7</a>
+		</div>
+
+		<div data-role="panel" id="ch1" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter1</h2>
+		  <p>제이쿼리 모바일 기본적인 설정 방법</p>
+		  <a href="./chapter/first.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220013102694" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+		
+		<div data-role="panel" id="ch2" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter2</h2>
+		  <p>제이쿼리 모바일 페이지 이동 방법</p>
+		  <a href="./chapter/second.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220013203354" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+
+		<div data-role="panel" id="ch3" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter3</h2>
+		  <p>제이쿼리 모바일 버튼 설정 방법</p>
+		  <a href="./chapter/third.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220013310124" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+
+		<div data-role="panel" id="ch4" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter4</h2>
+		  <p>제이쿼리 모바일 버튼 아이콘 설정 방법</p>
+		  <a href="./chapter/fourth.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220014057830" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+
+		<div data-role="panel" id="ch5" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter5</h2>
+		  <p>제이쿼리 모바일 팝업 설정 방법</p>
+		  <a href="./chapter/fifth.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220014263955" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+
+		<div data-role="panel" id="ch6" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter6</h2>
+		  <p>제이쿼리 모바일 툴바 설정 방법</p>
+		  <a href="./chapter/sixth.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220015097318" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+
+		<div data-role="panel" id="ch7" data-display="overlay" data-position-fixed="true"> 
+		  <h2>Chapter7</h2>
+		  <p>제이쿼리 모바일 네비바 설정 방법</p>
+		  <a href="./chapter/seventh.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+		  <a href="http://blog.naver.com/niee/220015171509" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+		  <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+		</div>
+	</div>
+
+	<div data-role="footer" style="text-align:center;">
+		<div <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+			<a href="http://blog.naver.com/niee" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-home ui-btn-icon-left">블로그</a>
+			<a href="https://github.com/ParkMinKyu" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-star ui-btn-icon-left">Github</a>
+			<a href="mailto:niee@naver.com" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-mail ui-btn-icon-left">Contact me</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
