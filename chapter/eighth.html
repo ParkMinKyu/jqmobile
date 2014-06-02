@@ -11,23 +11,11 @@
 <body>
 <div data-role="page" id="first">
 	
-	<div data-role="header">
-	<h1>Panels 페이지</h1>
-	<div data-role="navbar" data-iconpos="top">
-	  <ul>
-		<li><a href="#left">left Panels</a></li>
-		<li><a href="#right">right Panels</a></li>
-		<li><a href="#fixed">fixed Panels</a></li>
-		<li><a href="#overlay">overlay Panels</a></li>
-	  </ul>
-	</div>
-	</div>
-
-	<div data-role="panel" id="left"> 
+	<div data-role="panel" id="left" data-dismissible="false"> 
 		  <h1>Panels 페이지</h1>
 		  <p>
 			왼쪽에 고정되는 left Panels 입니다.<br>
-			Panels을 왼쪽으로 밀거나 다른곳을 클릭하면 해당 Panels이 사라집니다.
+			Panels을 왼쪽으로 밀면 해당 Panels이 사라집니다.
 		  </p>
 		</div>
 
@@ -43,11 +31,23 @@
 		 <p>스크롤에 상관없이 위치게 고정되는 fixed Panels 입니다.</p>
 		</div>
 
-		<div data-role="panel" id="overlay" data-position-fixed="true" data-display="overlay"> 
+		<div data-role="panel" id="overlay" data-position-fixed="true" data-display="overlay" data-swipe-close="false"> 
 			<h1>Panels 페이지</h1>
-		 <p>page를 밀어내지 않고 위로 덮어쓰는 panel입니다.</p>
+		 <p>page를 밀어내지 않고 위로 덮어쓰는 panel입니다. 밀거나 닫기 버튼으로만 닫을수 있습니다.</p>
 		 <a href="#first" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
 		</div>
+
+	<div data-role="header">
+	<h1>Panels 페이지</h1>
+	<div data-role="navbar" data-iconpos="top">
+	  <ul>
+		<li><a href="#left">left Panels</a></li>
+		<li><a href="#right">right Panels</a></li>
+		<li><a href="#fixed">fixed Panels</a></li>
+		<li><a href="#overlay">overlay Panels</a></li>
+	  </ul>
+	</div>
+	</div>
 
 	<div data-role="main" class="ui-content">
 		<h2>
