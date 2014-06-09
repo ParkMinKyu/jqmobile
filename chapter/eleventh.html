@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="first">
+	
+	<div data-role="header">
+		<h1>List 페이지</h1>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+	<a href="#pop1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">ol리스트</a>
+	<div data-role="popup" id="pop1">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<h1>ol리스트</h1>
+		<ol data-role="listview">
+		  <li><a href="#">리스트 1</a></li>
+  		  <li><a href="#">리스트 2</a></li>
+		  <li><a href="#">리스트 3</a></li>
+		  <li><a href="#">리스트 4</a></li>
+		  <li><a href="#">리스트 5</a></li>
+		  <li><a href="#">리스트 6</a></li>
+		</ol>
+	</div>
+
+	<a href="#pop2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">ul리스트</a>	
+	<div data-role="popup" id="pop2">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<h1>ul리스트</h1>
+		<ul data-role="listview">
+		  <li><a href="#">리스트 1</a></li>
+		  <li><a href="#">리스트 2</a></li>
+		  <li><a href="#">리스트 3</a></li>
+		  <li><a href="#">리스트 4</a></li>
+		  <li><a href="#">리스트 5</a></li>
+		  <li><a href="#">리스트 6</a></li>
+		</ul>		
+	</div>
+
+	<a href="#pop3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">data-inset리스트</a>	
+	<div data-role="popup" id="pop3">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<h1>data-inset 리스트</h1>
+		<ul data-role="listview" data-inset="true">
+		  <li><a href="#">리스트 1</a></li>
+		  <li><a href="#">리스트 2</a></li>
+		  <li><a href="#">리스트 3</a></li>
+		  <li><a href="#">리스트 4</a></li>
+		  <li><a href="#">리스트 5</a></li>
+		  <li><a href="#">리스트 6</a></li>
+		</ul>		
+	</div>
+
+	<a href="#pop4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">분류 리스트</a>	
+	<div data-role="popup" id="pop4">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<h1>분류 리스트</h1>
+		<ul data-role="listview" data-inset="true">
+	      <li data-role="list-divider">분류1</li>
+		  <li><a href="#">리스트 1</a></li>
+		  <li><a href="#">리스트 2</a></li>
+		  <li><a href="#">리스트 3</a></li>
+		  <li data-role="list-divider">분류2</li>
+		  <li><a href="#">리스트 4</a></li>
+		  <li><a href="#">리스트 5</a></li>
+		  <li><a href="#">리스트 6</a></li>
+		</ul>		
+	</div>
+
+	<a href="#pop5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">자동 분류 리스트</a>	
+	<div data-role="popup" id="pop5">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<h1>자동 분류 리스트</h1>
+		<ul data-role="listview" data-autodividers="true">
+		  <li><a href="#">a리스트 1</a></li>
+		  <li><a href="#">a리스트 2</a></li>
+  		  <li><a href="#">c리스트 6</a></li>
+		  <li><a href="#">b리스트 3</a></li>
+		  <li><a href="#">b리스트 4</a></li>
+		  <li><a href="#">c리스트 5</a></li>
+		  <li><a href="#">c리스트 6</a></li>
+		</ul>		
+	</div>
+
+	<a href="#pop6" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">리스트 Filter</a>	
+	<div data-role="popup" id="pop6">
+		<form class="ui-filterable">
+		  <input id="myFilter" data-type="search">
+		</form>
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<h1>리스트 Filter</h1>
+		<ul data-role="listview" data-filter="true" data-input="#myFilter"> 
+		   <li data-filtertext="fav"><a href="#">f or a or v 가 들어가면 검색 됨</a></li>
+		   <li><a href="#">a리스트 1</a></li>
+		  <li><a href="#">a리스트 2</a></li>
+		  <li><a href="#">b리스트 3</a></li>
+		  <li><a href="#">b리스트 4</a></li>
+		  <li><a href="#">c리스트 5</a></li>
+		  <li><a href="#">c리스트 6</a></li>
+		</ul>		
+	</div>
+
+	</div>
+
+	<div data-role="footer">
+		<h1>끝</h1>
+	</div>
+</div>
+</body>
+</html>
