@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="first">
+	
+	<div data-role="header">
+		<h1>Form Object 페이지</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<h1>기본 Form</h1>
+		<form>
+			<label for="fname">First name:</label>
+			<input type="text" name="fname" id="fname" placeholder="First name...">
+
+			<label for="fname1">삭제버튼 input :</label>
+			<input type="text" name="fname1" id="fname1" data-clear-btn="true" placeholder="삭제버튼 input...">
+
+			<input type="button" value="Button">
+			<input type="reset" value="Reset Button">
+			<input type="submit" value="Submit" data-icon="check" data-iconpos="right" data-inline="true">
+		</form>
+
+		<h1>ui-field-contain Form</h1>
+		<form method="post" action="demoform.asp">
+		  <div class="ui-field-contain">
+			<label for="fname2">First name:</label>
+			<input type="text" name="fname2" id="fname2">
+			<label for="lname">Last name:</label>
+			<input type="text" name="lname" id="lname">
+		  </div>
+		</form>
+
+		<h1>사용 가능한 입력 TAG</h1>
+		<label for="pswd" class="ui-hidden-accessible">type=password:</label>
+       <input type="password" name="passw" id="pswd" placeholder="Password">
+		<label for="bday">type=date:</label>
+	    <input type="date" name="bday" id="bday">
+		<label for="email">type=email:</label>
+	    <input type="email" name="email" id="email" placeholder="Your email..">
+		<label for="info">textarea:</label>
+		<textarea name="addinfo" id="info"></textarea>
+		<label for="search">type=search:</label>
+		<input type="search" name="search" id="search">
+
+		<fieldset data-role="controlgroup">
+		<legend>type=radio:</legend>
+		  <label for="male">Male</label>
+		  <input type="radio" name="gender" id="male" value="male">
+		  <label for="female">Female</label>
+		  <input type="radio" name="gender" id="female" value="female"> 
+	  </fieldset>
+
+	  <fieldset data-role="controlgroup">
+		<legend>type=checkbox:</legend>
+		  <label for="red">Red</label>
+		  <input type="checkbox" name="favcolor" id="red" value="red">
+		  <label for="green">Green</label>
+		  <input type="checkbox" name="favcolor" id="green" value="green">
+		  <label for="blue">Blue</label>
+		  <input type="checkbox" name="favcolor" id="blue" value="blue"> 
+	  </fieldset>
+
+	   <fieldset class="ui-field-contain">
+		<label for="day">Select</label>
+		<select name="day" id="day" data-native-menu="false">
+		  <option value="mon">Monday</option>
+		  <option value="tue">Tuesday</option>
+		  <option value="wed">Wednesday</option>
+		</select>
+	  </fieldset>
+
+		<h4>optgroup</h4>
+		<select name="day1" id="day1">
+		  <optgroup label="Weekdays">
+			<option value="mon">Monday</option>
+			<option value="tue">Tuesday</option>
+			<option value="wed">Wednesday</option>
+		  </optgroup>
+		  <optgroup label="Weekends">
+			<option value="sat">Saturday</option>
+			<option value="sun">Sunday</option>
+		  </optgroup>
+		</select>
+
+		<h4>multiple data-native-menu="false"</h4>
+		<select name="day2" id="day2" multiple data-native-menu="false">
+		  <optgroup label="Weekdays">
+			<option value="mon">Monday</option>
+			<option value="tue">Tuesday</option>
+			<option value="wed">Wednesday</option>
+		  </optgroup>
+		  <optgroup label="Weekends">
+			<option value="sat">Saturday</option>
+			<option value="sun">Sunday</option>
+		  </optgroup>
+		</select>
+		
+	  <label for="points">type="range":</label>
+	  <input type="range" name="points" id="points" value="50" min="0" max="100">
+
+	<label for="switch">type="checkbox" data-role="flipswitch":</label>
+    <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+
+	</div>
+
+	<div data-role="footer">
+		<h1>끝</h1>
+	</div>
+</div>
+</body>
+</html>
