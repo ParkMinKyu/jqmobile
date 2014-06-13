@@ -47,72 +47,68 @@ $(document).on("pagecreate","#first,#second",function(){
 	<div data-role="main" class="ui-content">
 		<h2>기본적인 이벤트 설정 방법</h2>
 		<xmp>
-		$(document).ready(function(){}) =  $(function(){})
-		$(window).load 는 해당 페이지의 모든 외부 리소스, 이미지 등이 로드 된 후에 처리
-		$(document).ready 는 DOM객체만 로드 되자마자 처리
+$(document).ready(function(){}) =  $(function(){})
+$(window).load 는 해당 페이지의 모든 외부 리소스, 이미지 등이 로드 된 후에 처리
+$(document).ready 는 DOM객체만 로드 되자마자 처리
 
+data-role="page"를 이용하여 모바일 페이지를 작성 했다면
+$(document).on('pagecreate','페이지명',function(){
+	//이벤트 등록
+});
+를 사용한 이벤트 등록도 사용 할 수 있다. 
 
-		data-role="page"를 이용하여 모바일 페이지를 작성 했다면
-		$(document).on('pagecreate','페이지명',function(){
-			//이벤트 등록
-		});
-		를 사용한 이벤트 등록도 사용 할 수 있다. 
-	
-		이벤트 할당 속도 =  $(document).on > $(document).ready(function(){}) =  $(function(){}) > $(window).load
+이벤트 할당 속도 =  $(document).on > $(document).ready(function(){}) =  $(function(){}) > $(window).load
+$(document).on('pagecreate','페이지명',function(){})를 사용해야 해당 페이지가 생성 될 때 이벤트 등록이 가능해진다.
 
-		$(document).on('pagecreate','페이지명',function(){})를 사용해야 해당 페이지가 생성 될 때 이벤트 등록이 가능해진다.
+jquery가 필수로 필요함.
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	   //이벤트 등록
+});
 
-		jquery가 필수로 필요함.
-		<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
-		<script>
-		$(document).ready(function(){
+$(function(){
+	   //이벤트 등록
+});
 
-		   //이벤트 등록
+$(document).on('pagecreate','페이지명',function(){
+	//이벤트 등록
+});
+............
+</script>
 
-		});
-		$(function(){
+이번 예제의 등록된 이벤트
+<script>
+$(window).load(function(){
+	alert( '$(window).load');
+		$('#e1win,#e2win').click(function(){
+		alert('클릭');
+	});
+});
 
-		   //이벤트 등록
+$(document).ready(function(){
+	alert('$(document).ready');
+	$('#e1ready,#e2ready').click(function(){
+		alert('클릭');
+	});
+});
 
-		});
-		$(document).on('pagecreate','페이지명',function(){
-			//이벤트 등록
-		});
-		............
-		</script>
+$(function(){
+	alert('$(function()');
+	$('#e1function,#e2function').click(function(){
+		alert('클릭');
+	});
+});
 
-		이번 예제의 등록된 이벤트
-		<script>
-		$(window).load(function(){
-			alert( '$(window).load');
-
-			$('#e1win,#e2win').click(function(){
-				alert('클릭');
-			});
-
-		});
-		$(document).ready(function(){
-			alert('$(document).ready');
-			$('#e1ready,#e2ready').click(function(){
-				alert('클릭');
-			});
-
-		});
-		$(function(){
-			alert('$(function()');
-			$('#e1function,#e2function').click(function(){
-				alert('클릭');
-			});
-		});
-		$(document).on("pagecreate","#first,#second",function(){
-			alert( this.id + '페이지 생성');
-			$('#e1on,#e2on').click(function(){
-				alert('클릭');
-			});
-		});
-		</script>
-		</xmp>
+$(document).on("pagecreate","#first,#second",function(){
+	alert( this.id + '페이지 생성');
+	$('#e1on,#e2on').click(function(){
+		alert('클릭');
+	});
+});
+</script>
+</xmp>
 		<button id="e1win">window.load에서 이벤트 할당</button>
 		<button id="e1ready">$(document).ready 에서 이벤트 할당</button>
 		<button id="e1function">$(function() 에서 이벤트 할당</button>
