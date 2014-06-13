@@ -7,6 +7,14 @@
 <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
 <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+<script>
+$(window).load(function(){
+	var obj = $.mobile.path.parseUrl(document.URL);
+	if(obj.search == '#eventpage'){
+		location.href="#eventpage";
+	}
+});
+</script>
 </head>
 <body>
 <!-- UI 페이지 -->
