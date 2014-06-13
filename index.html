@@ -9,9 +9,11 @@
 <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
 </head>
 <body>
+<!-- UI 페이지 -->
 <div data-role="page" id="first">
 	<div data-role="header">
 		<h1>jquery mobile UI Sample 페이지</h1>
+		<a href="#eventpage" data-role="button" data-icon="arrow-r" class="ui-btn-right" data-iconpos="right" data-inline="true">이벤트페이지</a>
 	</div>
 
 	<div data-role="panel" id="ch1" data-display="overlay" data-position-fixed="true"> 
@@ -141,5 +143,41 @@
 		</div>
 	</div>
 </div>
+
+<!-- 이벤트 페이지 -->
+<div data-role="page" id="eventpage">
+	<div data-role="header">
+		<a href="#first" data-role="button" data-icon="arrow-l" class="ui-btn-left" data-iconpos="left" data-inline="true">UI 페이지</a>
+		<h1>jquery mobile Event Sample 페이지</h1>
+	</div>
+
+	<div data-role="panel" id="ev1" data-display="overlay" data-position-fixed="true"> 
+	  <h2>Chapter1</h2>
+	  <p>제이쿼리 모바일 event 설정 방법</p>
+	  <a href="./event/first.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">예제 페이지</a><br>
+	  <a href="http://blog.naver.com/niee/220028975201" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right">설명 페이지</a><br>
+	  <a href="#eventpage" data-rel="close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<div data-role="navbar" style="text-align:center;" >
+		<ul>
+			<li><a href="#ev1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Chapter1</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div data-role="footer" style="text-align:center;">
+		<div <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+			<a href="http://blog.naver.com/niee" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-home ui-btn-icon-left">블로그</a>
+			<a href="https://github.com/ParkMinKyu" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-star ui-btn-icon-left">Github</a>
+			<a href="mailto:niee@naver.com" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-mail ui-btn-icon-left">Contact me</a>
+		</div>
+		<div <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+			<a href="http://jquerymobile.com/" data-ajax="false" class="ui-btn ui-btn-inline ui-shadow ui-icon-arrow-r ui-btn-icon-right">Jquery-mobile</a>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
