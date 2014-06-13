@@ -10,7 +10,7 @@
 <script>
 $(window).load(function(){
 	var obj = $.mobile.path.parseUrl(document.URL);
-	if(obj.hash == '#eventpage'){
+	if(obj.hash.toString() == "#eventpage​"){
 		location.href="#eventpage";
 	}
 });
