@@ -10,19 +10,19 @@
 <script>
 $(document).on("pageinit","#first",function(){
 	$('#tapTarget').on("tap",function(e){
-		$('#eText1').html(e.type);
+		alert(e.type);
 	});
 
 	$('#tapholdTarget').on("taphold",function(e){
-		$('#eText2').html(e.type);
+		alert(e.type);
 	});
 
 	$('#swipeTarget').on("swipe",function(e){
-		$('#eText3').html(e.type);
+		alert(e.type);
 	});
 
 	$('#swipelrTarget').on("swipeleft swiperight",function(e){
-		$('#eText4').html(e.type);
+		alert(e.type);
 	});
 });
 </script>
