@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+<script>
+$(document).on("pageinit","#first",function(){
+	$('#tapTarget').on("tap",function(e){
+		$('#eText1').html(e.type);
+	});
+
+	$('#tapholdTarget').on("taphold",function(e){
+		$('#eText2').html(e.type);
+	});
+
+	$('#swipeTarget').on("swipe",function(e){
+		$('#eText3').html(e.type);
+	});
+
+	$('#swipelrTarget').on("swipeleft swiperight",function(e){
+		$('#eText4').html(e.type);
+	});
+});
+</script>
+</head>
+<body>
+<div data-role="page" id="first">
+	
+	<div data-role="header">
+		<h1>tap event 페이지</h1>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<h2>tap 이벤트 설정 방법</h2>
+<xmp>
+모바일 기기의 가장 기본적인 이벤트로 tap이 있다.
+흔히 사용하는 터치 관련 이벤트이다.
+
+jquery-mobile에서 제공하는 터치 이벤트로는
+tap,taphold,swipe,swipeleft,swiperight 이렇게 5가지가 있다.
+
+1.tap은 마우스 클릭과 같은 이벤트로 화면을 가볍게 터치했을때 발생하는 이벤트 이다.
+ex)
+$('#tapTarget').on("tap",function(e){
+		$('#eText1').html(e.type);
+});
+</xmp>
+	<div id="tapTarget" style="width:100%;height:100px;border:1px solid;text-align:center;">
+	<br><br>
+	<span style="font-size:40px;color:red;width:200px;margin:0 auto;font-weight:bold;" id="eText1">
+	이곳을 터치 or 클릭 하여 이벤트 확인
+	</span>
+	</div>
+<xmp>
+2.taphold는 해당 태그를 1초이상 누르고 있을때 발생하는 이벤트 이다.
+ex)
+$('#tapholdTarget').on("taphold",function(e){
+	$('#eText2').html(e.type);
+});
+</xmp>
+	<div id="tapholdTarget" style="width:100%;height:100px;border:1px solid;text-align:center;">
+	<br><br>
+	<span style="font-size:40px;color:red;width:200px;margin:0 auto;font-weight:bold;" id="eText2">
+	1초간 누르고 있을때 이벤트 확인 이벤트 확인
+	</span>
+	</div>
+<xmp>
+3.swipe는 해당 영역에 좌우로 드래그 같은 상황이 발생했을때의 이벤트이나 좌우의 개념이 없다.
+ex)
+$('#swipeTarget').on("swipe",function(e){
+	$('#eText3').html(e.type);
+});
+</xmp>
+	<div id="swipeTarget" style="width:100%;height:100px;border:1px solid;text-align:center;">
+	<br><br>
+	<span style="font-size:40px;color:red;width:200px;margin:0 auto;font-weight:bold;" id="eText3">
+	좌우 드래그 or 움직임 이벤트 확인
+	</span>
+	</div>
+<xmp>
+4.swipeleft swiperight는 swipe가 발생 했을때 left인지right인지 구분하여 발생하는 이벤트이다.
+ex)
+$('#swipelrTarget').on("swipeleft swiperight",function(e){
+	$('#eText4').html(e.type);
+});
+</xmp>
+	<div id="swipelrTarget" style="width:100%;height:100px;border:1px solid;text-align:center;">
+	<br><br>
+	<span style="font-size:40px;color:red;width:200px;margin:0 auto;font-weight:bold;" id="eText4">
+	좌우로 드래그 or 움직임 위치 이벤트 확인
+	</span>
+	</div>
+	</div>
+
+	<div data-role="footer">
+		<h1>끝</h1>
+	</div>
+</div>
+</body>
+</html>
