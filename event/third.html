@@ -17,8 +17,8 @@ $(document).on("pageinit","#first",function(){
 	  alert("스크롤 멈춤!");
 	});
 
-	$(window).on("orientationchange",function(){
-		 alert("Orientation is: " + event.orientation);
+	$(window).on("orientationchange",function(e){
+		 alert("Orientation is: " + e.orientation);
 	});
 
 });
@@ -83,8 +83,8 @@ $('#scrollTarget').on("scrollstop",function(){
 발생하는 이벤트 이다.
 	<br><br>
 ex)
-$(window).on("orientationchange",function(){
-	 alert("Orientation is: " + event.orientation);
+$(window).on("orientationchange",function(e){
+	 alert("Orientation is: " + e.orientation);
 });
 	<br><br>
 이벤트 확인은 모바일기기로 접속하여 세로모드,가로모드 변경해보세요.
