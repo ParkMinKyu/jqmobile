@@ -208,6 +208,7 @@
  </div><!--wrap-->
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
     <script type="text/javascript">                                                                                                      
 	/*tab_menu*/
@@ -227,13 +228,12 @@
 	
     /*방향전환 이벤트*/
     	$(window).bind("orientationchange",function(e){
-    		alert($("#wrap").css("width"))
-	    if($("#wrap").css("width") == "75%"){
+    	if(e.orientation == 'portrait'){
 			//세로
-			$("#wrap").css("width","100%").css("margin","0 auto");
+		$("#wrap").css("width","100%").css("margin","0 auto");
 		}else{
 			//가로
-	    		$("#wrap").css("width","75%").css("margin","0 auto");
+	    $("#wrap").css("width","75%").css("margin","0 auto");
 
 		}
 
