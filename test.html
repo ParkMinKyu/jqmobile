@@ -227,6 +227,7 @@
 	
     /*방향전환 이벤트*/
     	$(window).bind("orientationchange",function(e){
+    		alert($("#wrap").css("width"))
 	    if($("#wrap").css("width") == "75%"){
 			//세로
 			$("#wrap").css("width","100%").css("margin","0 auto");
