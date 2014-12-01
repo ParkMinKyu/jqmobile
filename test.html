@@ -227,9 +227,9 @@
 	
     /*방향전환 이벤트*/
     	$(window).bind("orientationchange",function(e){
-	    for(key in e){
-	    	alert(key);
-	    }
+	    	alert(e.originalEvent);
+	    	alert(e.type);
+	    
 
 
 
