@@ -227,20 +227,12 @@
 	
     /*방향전환 이벤트*/
     	$(window).bind("orientationchange",function(e){
-	    	for(key in e.originalEvent){
-	    		alert(key);	
-	    	}
-	    	
-	    
-
-
-
-		if(e.orientation == 'portrait'){
+	    if($("#wrap").css("width") == "75%"){
 			//세로
-		$("#wrap").css("width","100%").css("margin","0 auto");
+			$("#wrap").css("width","100%").css("margin","0 auto");
 		}else{
 			//가로
-	    $("#wrap").css("width","75%").css("margin","0 auto");
+	    		$("#wrap").css("width","75%").css("margin","0 auto");
 
 		}
 
